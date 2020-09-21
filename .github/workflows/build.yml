@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build and publish Docker image
+#        if: github.ref == 'refs/heads/master'
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: gridsuite/openjdk11-hades2
+          username: gridsuiteci
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
