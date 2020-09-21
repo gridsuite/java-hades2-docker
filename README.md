@@ -1,1 +1,1 @@
-# hades2-docker
+# java-hades2 docker image
