@@ -1,1 +1,1 @@
-# hades2-docker
+# openjdk11-hades2 docker image
