@@ -1,4 +1,4 @@
-FROM powsybl/java:1
+FROM powsybl/java:1.0.0
 
 USER root
 ARG HADES2_FAMILY_VERSION
