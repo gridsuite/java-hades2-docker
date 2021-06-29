@@ -1,6 +1,7 @@
 FROM powsybl/java:1.0.0
 
 USER root
+WORKDIR /
 ARG HADES2_FAMILY_VERSION
 ARG HADES2_VERSION
 
@@ -13,4 +14,5 @@ RUN wget https://github.com/rte-france/hades2-distribution/releases/download/V${
   rm -f tar xvfz hades2-V${HADES2_VERSION}-linux.tar.gz && \
   ln -s hades2-V${HADES2_VERSION} hades2
 
+WORKDIR /home/powsybl
 USER powsybl
