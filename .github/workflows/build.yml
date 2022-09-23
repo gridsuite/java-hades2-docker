@@ -15,7 +15,7 @@ jobs:
 
       - name: Build and publish Docker image
         if: github.ref == 'refs/heads/main'
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@33a481be3e179353cb7793a92b57cf9a6c985860 # v4
         env:
           HADES2_FAMILY_VERSION: 6.7.1
           HADES2_VERSION: 6.7.1.1
