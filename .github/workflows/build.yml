@@ -24,4 +24,4 @@ jobs:
           username: gridsuiteci
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           buildargs: HADES2_FAMILY_VERSION,HADES2_VERSION
-          tags: "latest"
+          tags: "2.0.0"
