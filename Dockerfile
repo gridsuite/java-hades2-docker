@@ -1,4 +1,4 @@
-FROM powsybl/java:1.0.0
+FROM powsybl/java:2.0.0
 
 USER root
 WORKDIR /
